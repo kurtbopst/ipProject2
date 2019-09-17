@@ -1,0 +1,35 @@
+h2 {
+    color: blueviolet;
+}
+
+
+/* CUSTOM RADIO BUTTONS */
+.radio {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.radio input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: grey;
+}
+
+.radio input:checked ~ .checkmark{
+    background-color: green;
+}

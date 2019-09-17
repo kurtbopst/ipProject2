@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Payment Processing</title>
+</head>
+<body>
+    
+<h2>Enter Payment Information</h2>
+<form onSubmit="return validateForm();">
+
+
+<input type="radio" id="creditCard" name="paymentMethod" onclick="updateForm('creditCard');" checked>
+<img src="images/AmEx.png" width="5%" height="5%"/>
+<img src="images/Discover.png" width="5%" height="5%"/>
+<img src="images/MasterCard.png" width="5%" height="5%"/>
+<img src="images/Visa.png" width="5%" height="5%"/>
+</input>
+
+<input type="radio" id="payPal" name="paymentMethod" onclick="updateForm('payPal');">
+<img src="images/PayPal.png" width="10%" height="10%"/>
+</input>
+
+<div id='container'>
+Email</br><input type="text" id="email"></br>PayPal Password</br><input type="text" id="password">
+</br><p id='error'>error message</p>
+
+
+
+
+
+
+</div>
+</br>
+</br>
+<button type="submit"><img src="images/PayNow.png" height="50%" width="50%"/></button>
+
+
+
+</form>
+
+
+
+<a href="../index.html">ePortfolio</a>  
+
+<script src="script.js"></script>
+</body>
+</html>

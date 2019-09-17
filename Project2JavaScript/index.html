@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="beauty.css">
+<title>Payment Processing</title>
+</head>
+<body>
+    
+<h2>Enter Payment Information</h2>
+<form onSubmit="return validateForm();">
+
+<label class="radio">
+<input type="radio" id="creditCard" name="paymentMethod" onclick="updateForm('creditCard');" checked>
+<span class='checkmark'></span>
+<img src="images/AmEx.png" width="5%" height="5%"/>
+<img src="images/Discover.png" width="5%" height="5%"/>
+<img src="images/MasterCard.png" width="5%" height="5%"/>
+<img src="images/Visa.png" width="5%" height="5%"/>
+</input>
+</label>
+
+<label class='radio'>
+<input type="radio" id="payPal" name="paymentMethod" onclick="updateForm('payPal');">
+<span class='checkmark'></span> 
+<img src="images/PayPal.png" width="10%" height="10%"/>
+</input>
+</label>
+
+
+<div id='container'>
+First Name: <input type="text" id="firstName" required></br>
+Last Name:  <input type="text" id="lastName" required></br>
+Address: <input type="text" id="address" required></br>
+City:    <input type="text" id="city" required></br>
+Zip:    <input type="text" id="zip" required></br>
+Email Address:    <input type="text" id="email" required>   </br>
+Name on Card:   <input type="text" id="cardName" required>    </br>
+Card Number:    <input type="text" id="cardNum" required>    </br>
+<a href="https://en.wikipedia.org/wiki/Card_security_code" target="_blank">
+CVV2/CVC</a>:  <input type="text" id="cvv" required>     </br>
+
+State: <select id="state">
+    <option value="default" selected hidden>Select State</option>
+    <option id='Alabama' value='Alabama'>Alabama</option>
+<option id='Alaska' value='Alaska'>Alaska</option>
+<option id='Arizona' value='Arizona'>Arizona</option>
+<option id='Arkansas' value='Arkansas'>Arkansas</option>
+<option id='California' value='California'>California</option>
+<option id='Colorado' value='Colorado'>Colorado</option>
+<option id='Connecticut' value='Connecticut'>Connecticut</option>
+<option id='Delaware' value='Delaware'>Delaware</option>
+<option id='Florida' value='Florida'>Florida</option>
+<option id='Georgia' value='Georgia'>Georgia</option>
+<option id='Hawaii' value='Hawaii'>Hawaii</option>
+<option id='Idaho' value='Idaho'>Idaho</option>
+<option id='Illinois' value='Illinois'>Illinois</option>
+<option id='Indiana' value='Indiana'>Indiana</option>
+<option id='Iowa' value='Iowa'>Iowa</option>
+<option id='Kansas' value='Kansas'>Kansas</option>
+<option id='Kentucky' value='Kentucky'>Kentucky</option>
+<option id='Louisiana' value='Louisiana'>Louisiana</option>
+<option id='Maine' value='Maine'>Maine</option>
+<option id='Maryland' value='Maryland'>Maryland</option>
+<option id='Massachusetts' value='Massachusetts'>Massachusetts</option>
+<option id='Michigan' value='Michigan'>Michigan</option>
+<option id='Minnesota' value='Minnesota'>Minnesota</option>
+<option id='Mississippi' value='Mississippi'>Mississippi</option>
+<option id='Missouri' value='Missouri'>Missouri</option>
+<option id='Montana' value='Montana'>Montana</option>
+<option id='Nebraska' value='Nebraska'>Nebraska</option>
+<option id='Nevada' value='Nevada'>Nevada</option>
+<option id='New Hampshire' value='New Hampshire'>New Hampshire</option>
+<option id='New Jersey' value='New Jersey'>New Jersey</option>
+<option id='New Mexico' value='New Mexico'>New Mexico</option>
+<option id='New York' value='New York'>New York</option>
+<option id='North Carolina' value='North Carolina'>North Carolina</option>
+<option id='North Dakota' value='North Dakota'>North Dakota</option>
+<option id='Ohio' value='Ohio'>Ohio</option>
+<option id='Oklahoma' value='Oklahoma'>Oklahoma</option>
+<option id='Oregon' value='Oregon'>Oregon</option>
+<option id='Pennsylvania' value='Pennsylvania'>Pennsylvania</option>
+<option id='Rhode Island' value='Rhode Island'>Rhode Island</option>
+<option id='South Carolina' value='South Carolina'>South Carolina</option>
+<option id='South Dakota' value='South Dakota'>South Dakota</option>
+<option id='Tennessee' value='Tennessee'>Tennessee</option>
+<option id='Texas' value='Texas'>Texas</option>
+<option id='Utah' value='Utah'>Utah</option>
+<option id='Vermont' value='Vermont'>Vermont</option>
+<option id='Virginia' value='Virginia'>Virginia</option>
+<option id='Washington' value='Washington'>Washington</option>
+<option id='West Virginia' value='West Virginia'>West Virginia</option>
+<option id='Wisconsin' value='Wisconsin'>Wisconsin</option>
+<option id='Wyoming' value='Wyoming'>Wyoming</option>
+</select></br>
+
+Expiration Date<input type="month" id="date" value="2019-04" min="2017-01" max="2020-12">
+</br><p id="error"></p>
+
+
+
+</div>
+</br>
+</br>
+<button type="submit"><img src="images/PayNow.png" height="50%" width="50%"/></button>
+
+
+
+</form>
+
+
+
+<a href="../index.html">ePortfolio</a>  
+
+<script src="script.js"></script>
+</body>
+</html>
